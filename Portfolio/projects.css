@@ -1,0 +1,18 @@
+/* centers the content to the middle of the page */
+#content{
+    font-size: 6rem;
+    color:white;
+    text-align: center;
+    vertical-align: center;
+}
+/* defines the grid structure of the page */
+.project-container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+/*  This makes the nav bar a flex container and also adds some margins/paddings as well as making the color of the nav bar slategray*/
+body{
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    padding-inline: 7em;
+    margin-inline: 1em;
+    margin-top: 1em;
+    background-color: darkslategray;
+    font-family: 'Shantell Sans', sans-serif;
+
+    grid-area:nav;
+}
+/* This defines the main grid container and also defines the template areas of the grid*/
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    'nav'
+    'welcome'
+    'links'
+    'foot'
+}
+/*This makes the inner ul elements a flex container as well*/
+.flex-container2{
+    display: flex;
+}
+/* This changes the list so that the items are on one line*/
+.flex-container li {
+    display: inline-block;
+    font-size: 1.5rem;
+   
+}
+
+ul{
+    margin: 1rem;
+    padding: 1rem;
+}
+/* This makes the links have no text decoration (underlining, etc.)*/
+header a{
+    text-decoration: none;
+    color: grey;
+}
+
+ #flex-item2{
+    align-self: center;
+    flex-grow: 1;
+    margin:1rem;
+}
+
+#flex-item1{
+    align-self: center;
+    flex-grow: 4;
+    margin:1rem;
+}
+/* This adjusts the ul items in the flex container and also adds a transition*/
+#inner-items{
+    padding:1rem;
+    flex-grow:1;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.flex-container h1{
+    color:white;
+    font-size: 1.5rem;
+    padding:1rem;
+}
+
+
+header #inner-items:hover{
+    background-color: #211b4385;
+}
+
+/*This makes the color of the body olive green*/
+body{
+    background-color: darkolivegreen;
+    width: 100%;
+    height: 100%;
+}
+
+/* This aligns the welcome message to the center of the page*/
+#welcome{
+    color: white;
+    font-size:40px;
+    font-family:'Quicksand', sans-serif;
+    grid-area: welcome;
+    vertical-align: center;
+    text-align: center;
+    padding:6em;
+
+}
+/*This creates the flex container for the links*/
+.flex-container3{
+    display:flex;
+    align-items: center;
+    border-top:1px solid white;
+    margin-top: 2rem;
+
+    grid-area:links;
+}
+
+#image1, #image2, #image3{
+    flex-grow: 1;
+    margin:1rem;
+    padding-left:13em;
+    align-self: center;
+}
+/* This creates the flex container for the footer */
+#flex-container4{
+    background-color: darkslategray;
+    display: flex;
+    margin-bottom: 0;
+    margin-inline: 0;
+    
+}
+/* This removes the list style of the li elements in the footer */
+#flex-container4 li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#items{
+    flex-grow: 1;
+}
+/* This removesd the text decoration of the ul elemnts */
+#flex-container4 a{
+    text-decoration: none;
+    color:black;
+}
+/* This defines the grid area for the footer element */
+footer{
+    grid-area:foot;
+}

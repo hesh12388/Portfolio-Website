@@ -1,0 +1,122 @@
+.blogsContainer{
+    display: flex;
+
+    flex-direction: column;
+    min-height: 100vh;
+    width:100%;
+
+}
+
+body{
+    background: url('background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#error{
+    color:white;
+    font-size:2rem;
+    margin-left:1em;
+}
+#monthLabel{
+    color:white;
+}
+
+.filter{
+    margin: 1em;
+}
+
+.commentText{
+    color:black;
+    border: 1pt solid black;
+    padding:1em;
+    margin:1em;
+}
+
+.commentText button{
+    justify-self: end;
+}
+
+.comment{
+    justify-self: center;
+}
+
+
+.commentform{
+    width:400px;
+    height:100px;
+
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:4vmin;
+    color:black;
+    padding:0.5em;
+}
+
+.commentform button{
+    border:1pt solid white;
+    border-radius: 5px;
+    background-color: grey;
+    color:white;
+}
+
+.date{
+    justify-self: flex-end;
+}
+
+.title{
+    justify-self: flex-start;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    color:black;
+    margin:2em;
+    background-color: white;
+    border: 1pt solid white;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.hidden{
+    height:0;
+    width:0;
+}
+
+
+.flex-item1{
+
+
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1pt solid black;
+    
+}
+
+.content{
+    margin-bottom:1em;
+}
+.title{
+    
+    width:100%;
+    
+}
+
+.date{
+    align-self: center;
+    text-align: end;
+    width:100%;
+}
+.title h2{
+    font-size: 30px;
+   
+}
+
+.content p{
+    font-size: 20px;
+}

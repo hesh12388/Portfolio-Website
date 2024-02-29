@@ -1,0 +1,25 @@
+.content1, .content2, .content3, .content4{
+    font-size: 1rem;
+
+  max-width: 48vw;
+}
+
+
+
+.box{
+    width:50vw;
+}
+
+.grid-container{
+    height:100vh;
+}
+
+.navbar{
+    position: sticky;
+}
+
+.title:hover + .content1, .title4:hover + .content4{
+    opacity: 1;
+    visibility: visible;
+    height:40vh; 
+}

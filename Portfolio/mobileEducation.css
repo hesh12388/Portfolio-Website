@@ -1,0 +1,26 @@
+#about2{
+    flex-direction: column;
+}
+
+#about3{
+    font-size:1rem;
+}
+
+#about1{
+    font-size:2rem;
+}
+.left, .right{
+    top:70%;
+}
+
+#uni, #school{
+    font-size:1.5rem;
+}
+
+#education-title{
+    font-size:2.5rem;
+}
+
+#uni{
+    padding:1em;
+}

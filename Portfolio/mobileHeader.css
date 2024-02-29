@@ -1,0 +1,11 @@
+.container {
+   flex-direction: column;
+}
+
+.navbar-nav {
+   flex-direction: column;
+}
+
+.navbar-nav ul {
+    flex-direction: column;
+}

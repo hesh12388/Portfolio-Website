@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+#education{
+    background-color: white;
+    margin:10px;
+}
+
+/* This defines the grid structure of the page */
+.grid
+{
+    display: grid;
+
+    grid-template-areas: 
+    'nav nav nav'
+    'image_slider image_slider image_slider'
+    'footer footer footer';
+
+
+}
+
+.slider_container{
+    color:white;
+    display:flex;
+    width:60%;
+    grid-area: image_slider;
+}
+/* This defines the grid structure of the about me section of the page */
+#about{
+    display: grid;
+    grid-template-areas: 
+    'title title'
+     'image description'
+     'image description';
+
+    background-color: white;
+
+    padding:20px;
+    margin: 10px;
+
+}
+
+#about1{
+    grid-area:title;
+    align-self: center;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+#about2{
+    grid-area: image;
+    vertical-align: center;
+}
+
+#about3{
+    grid-area: description;
+    vertical-align: center;
+    padding: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#heading{
+    font-style: italic;
+}
+/* This makes the color of the caption white and specifies the font of the caption */
+figcaption{
+    color:white;
+    margin:5px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* This specifies the border of the skills section and the font of the text within the education section. It also adds some margin and padding */
+#skills{
+    background-color: white;
+    margin: 10px;
+    padding:20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+/* This defines the grid structure of the education section of the website */
+#education{
+    display: grid;
+    grid-template-rows: 60px 120px 120px;
+    grid-template-areas: 
+    'title'
+    'uni'
+    'school';
+}
+
+#uni{
+    grid-area: uni;
+    padding:10px;
+    margin: 10px;
+}
+
+#school{
+    grid-area: school;
+    margin: 10px;
+    padding:10px;
+}
+
+#education-title{
+    grid-area:title;
+    margin:10px;
+    padding:10px;
+    font-size: 30px;
+    font-family:'Rajdhani', sans-serif;
+}
+/* This defines the grid structure of the skills section of the website */
+#skills{
+    display:grid;
+    grid-template-areas: 
+    'skills-title'
+    'title1'
+    'technical-skills'
+    'title2'
+    'non-technical-skills'
+    ;
+}
+
+#technical-skills{
+    grid-area: technical-skills;
+  
+    margin:10px;
+  
+}
+
+.flex-container{
+    grid-area:nav;
+}
+
+#non-technical-skills{
+    grid-area: non-technical-skills;
+  
+    margin:10px;
+
+}
+/* This defines the font and font size of the title */
+#skills-title1{
+    grid-area: title1;
+    font-size:20px;
+    margin:5px;
+    font-family:'Rajdhani', sans-serif;
+
+}
+/* This defines the font and font size of the title */
+#skills-title{
+    grid-area:skills-title;
+    font-size:30px;
+    font-family:'Rajdhani', sans-serif;
+}
+/* This defines the font and font size of the title */
+#skills-title2{
+    grid-area: title2;
+    font-size:20px;
+    margin:5px;
+    font-family:'Rajdhani', sans-serif;
+    
+}
+
+#skills ul{
+    padding:20px;
+}
+/* This adjusts the footer so that it is at the bottom of the page */
+footer{
+    margin: 12em 1em 1em 1em;
+}
